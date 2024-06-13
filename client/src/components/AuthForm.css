@@ -1,0 +1,104 @@
+.auth-form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.auth-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #4CAF50; /* Highlight input border on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+.submit-btn, .toggle-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.submit-btn {
+    background-color: #4CAF50; /* Green color for the submit button */
+    color: white;
+    box-shadow: 0px 5px 10px rgba(0, 140, 58, 0.2); /* subtle shadow for depth */
+    border: 1px solid #4CAF50; /* Same color border as background */
+}
+
+.submit-btn:hover {
+    background-color: #45a049; /* Slightly darker shade for hover state */
+}
+
+.toggle-btn {
+    background-color: #ff9800; /* Orange color for contrast */
+    color: white;
+    box-shadow: 0px 5px 10px rgba(255, 152, 0, 0.2); /* subtle shadow for depth */
+    border: 1px solid #ff9800; /* Same color border as background */
+}
+
+.toggle-btn:hover {
+    background-color: #e68a00; /* Slightly darker shade for hover state */
+}
+
+
+/* Style for password requirements */
+.password-requirements {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Smooth transition for expanding */
+}
+
+.form-group input:focus ~ .password-requirements {
+    opacity: 1;
+    max-height: 150px; /* Adjust based on actual space needed */
+}
+
+.password-requirements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.password-requirements li.valid {
+    color: green;
+}
+
+.password-requirements li.invalid {
+    color: B;
+}

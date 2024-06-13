@@ -1,0 +1,91 @@
+  
+  .introduction {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7); /* Translucent background for readability */
+  }
+  
+  .side_by_side {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .side_by_side_child {
+    width: 45%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Translucent background for readability */
+    cursor: pointer; /* Indicates clickable items */
+  }
+  
+  .side_by_side_child:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover for interactive feedback */
+  }
+  
+  .dashboards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping to new lines if needed */
+    margin: 20px 0;
+  }
+  
+  .dashboard-box {
+    width: 30%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Translucent background for readability */
+    cursor: pointer; /* Indicates clickable items */
+    margin-bottom: 20px; /* Add some spacing between dashboard boxes */
+  }
+  
+  .dashboard-box:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover for interactive feedback */
+  }
+  
+  .get-started {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .cta-button {
+    background-color: #f2a365; /* Or any color that matches your theme */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #e98b2a; /* Darker shade for hover state */
+  }
+  
+  /* Responsive layout adjustments */
+  @media (max-width: 768px) {
+    .side_by_side {
+      flex-direction: column;
+    }
+  
+    .side_by_side_child {
+      width: 90%;
+      margin: 10px auto;
+    }
+  
+    .dashboards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .dashboard-box {
+      width: 90%;
+    }
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
