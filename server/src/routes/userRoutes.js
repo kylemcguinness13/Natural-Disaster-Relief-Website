@@ -18,7 +18,6 @@ router.get("/getpledges/:userId", userController.getPledges)
 router.get("/admin", [verifyToken, isAdmin], (req, res) => {
   res.status(200).send("Admin content");
 });
-// Inside your server code, add a new route for testing the database connection
 
 
 
